@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: C:\xampp\htdocs\How2Tech\sitemap.xml
