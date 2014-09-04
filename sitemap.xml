@@ -28,7 +28,7 @@
       <siteMapNode title="How2Tech | QASMT | Active Volunteering Project" description="CantSelect" url="~/tuts/cantSelect.php"/>
       <siteMapNode title="How2Tech | QASMT | Active Volunteering Project" description="Ipad" url="~/tuts/ipad.php"/>
       <siteMapNode title="How2Tech | QASMT | Active Volunteering Project" description="Iphone" url="~/tuts/iphone.php"/>
-      <siteMapNode title="justLearn" description="JustLearn" url="~/tuts/justLearn.php"/
+      <siteMapNode title="justLearn" description="JustLearn" url="~/tuts/justLearn.php"/>
       <siteMapNode title="How2Tech | QASMT | Active Volunteering Project" description="TutsHome" url="~/tuts/tutsHome.php"/>
       <siteMapNode title="How2Tech | QASMT | Active Volunteering Project" description="Windowsphone" url="~/tuts/windowsphone.php"/>
     </siteMapNode>
