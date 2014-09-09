@@ -1,11 +1,18 @@
-
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Ishan Joshi
+ * Date: 14/08/14
+ * Time: 3:27 PM
+ */
+?>
 
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>How2Tech | QASMT | Active Volunteering Project</title>
+	<title>Tech Connect | QASMT | Active Volunteering Project</title>
 
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/themeCss.css" rel="stylesheet">
@@ -59,8 +66,10 @@
 
 <body style="background-color: #ffffff">
 	<nav class="navbar-default navbar-fixed-top">
-		<button class="navbar-btn btn"><a href="../index.html"> Back To Home</a></button>
-		<button class="navbar-btn btn"><a href="tutsHome.html"> Back To Tutorials Page</a></button>
+		<a href="../index.html
+                "><button class="navbar-btn btn">Home</button></a>
+		<a href="tutsHome.html
+                "><button class="navbar-btn btn">To Tutorials Page</button></a>
 	</nav>
 
 
@@ -71,7 +80,7 @@
 				<div class="caption">
 					<h3>Google Maps</h3>
 					<p>This app lets you find directions if you are lost. It uses the built in sensors in the phone to guide you to your preferred location and navigate when lost<br><br></p>
-					<p><a href="#" class="btn btn-danger" role="button">How to use it on my Phone</a><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
+					<p><a href="#" class="btn btn-danger" role="button">How to use it on my Phone</a> <a href="#" class="btn btn-primary" role="button">Learn more</a></p>
 				</div>
 			</div>
 		</div>
@@ -81,7 +90,7 @@
 				<div class="caption">
 					<h3>Skype</h3>
 					<p>This app lets you connect with loved ones, and also call them for free. It includes a messanger and a video chat facility that costs nothing<br><br></p>
-					<p><a href="#" class="btn btn-danger" role="button">How to use it on my Phone</a> <a href="#" class="btn btn-default" role="button">Learn more</a></p>
+					<p><a href="#" class="btn btn-danger" role="button">How to use it on my Phone</a> <a href="#" class="btn btn-primary" role="button">Learn more</a></p>
 				</div>
 			</div>
 		</div>
@@ -91,7 +100,7 @@
 				<div class="caption">
 					<h3>Windows Store</h3>
 					<p>This is where you can download all your apps, so this is a must learn app how to use which enable you to get other apps and enrich your phone!<br><br></p>
-					<p><a href="#" class="btn btn-danger" role="button">How to use it on my Phone</a> <a href="#" class="btn btn-default" role="button">Learn more</a></p>
+					<p><a href="#" class="btn btn-danger" role="button">How to use it on my Phone</a> <a href="#" class="btn btn-primary" role="button">Learn more</a></p>
 				</div>
 			</div>
 		</div>
@@ -114,46 +123,29 @@
 		</div>
 		<div class="tab-pane tutsa" id="messages">
 			<h3>Windows Store</h3>
-										<div class='wrapper'>
-									<img class=\"cds\" src='../img/windows/store/wp_ss_20140818_0001.png'>
-									<div class='description'>
-										<p class='description_content'>first image</p>
-									</div>
-								</div>
-										<div class='wrapper'>
-									<img class=\"cds\" src='../img/windows/store/wp_ss_20140818_0002.png'>
-									<div class='description'>
-										<p class='description_content'>second image</p>
-									</div>
-								</div>
-													<div class='wrapper'>
-									<img class=\"cds\" src='../img/windows/store/wp_ss_20140818_0003.png'>
-									<div class='description'>
-										<p class='description_content'>third image</p>
-									</div>
-								</div>
-													<div class='wrapper'>
-									<img class=\"cds\" src='../img/windows/store/wp_ss_20140818_0004.png'>
-									<div class='description'>
-										<p class='description_content'>fourth image</p>
-									</div>
-								</div>
-								
-																					<div class='wrapper'>
-									<img class=\"cds\" src='../img/windows/store/wp_ss_20140818_0005.png'>
-									<div class='description'>
-										<p class='description_content'>fifth image</p>
-									</div>
-								</div>
-								
-																					<div class='wrapper'>
-									<img class=\"cds\" src='../img/windows/store/wp_ss_20140818_0006.png'>
-									<div class='description'>
-										<p class='description_content'>sixth image</p>
-									</div>
-								</div>
+			<?html
+				function imgCap($src, $content)
+				{
 
+					echo "<div class='wrapper'>\n";
+					echo "				<img class=\"cds\" src='$src'>\n";
+					echo "				<div class='description'>\n";
+					echo "					<p class='description_content'>$content</p>\n";
+					echo "				</div>\n";
+					echo "			</div>\n";
 
+				}
+			?>
+			<?html
+				imgCap("../img/windows/store/wp_ss_20140818_0001.png", "first image");
+				imgCap("../img/windows/store/wp_ss_20140818_0002.png","second image");
+				imgCap("../img/windows/store/wp_ss_20140818_0003.png","third image");
+				imgCap("../img/windows/store/wp_ss_20140818_0004.png","fourth image");
+				imgCap("../img/windows/store/wp_ss_20140818_0005.png","fifth image");
+				imgCap("../img/windows/store/wp_ss_20140818_0006.png","sixth image");
+
+			?>
+<!--			<div class="hvinfo" id="1">This is the windows store app</div>-->
 
 		</div>
 	</div>
